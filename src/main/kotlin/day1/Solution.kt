@@ -5,7 +5,7 @@ import java.util.stream.Stream
 import kotlin.math.abs
 
 fun readInputFile(): Stream<String> {
-    return File("src/main/kotlin/me/luxish/aoc/day1/input.txt").readLines().stream()
+    return File("src/main/kotlin/day1/input.txt").readLines().stream()
 }
 
 fun addToListInOrder(list: MutableList<Long>, locationId: Long) {
