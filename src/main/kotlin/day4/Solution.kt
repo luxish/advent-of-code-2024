@@ -35,7 +35,6 @@ fun part1(): Int {
         line.split("", line).filter { it != "" }.toCollection(lineList)
         matrix.add(lineList)
     }
-
     for (irow in matrix.indices) {
         for (icol in matrix[irow].indices) {
             if (icol - word.length + 1 >= 0 && word == wordOn(matrix, Direction.LEFT, irow, icol, word.length)) {
@@ -74,7 +73,6 @@ fun part1(): Int {
             }
         }
     }
-
     return sum
 }
 
